@@ -1,10 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 
 // tailwind.config.js
-const { fontFamily } = require('tailwindcss/defaultTheme')
+// const { fontFamily } = require('tailwindcss/defaultTheme')
 
 // const defaultTheme = require("tailwindcss/defaultTheme")
 // sans: ['var(--font-inter)', ...defaultTheme.fontFamily.sans],
+
+// sans: ["var(--font-inter)", ...fontFamily.sans],
+//         mono: ["var(--font-roboto-mono)", ...fontFamily.mono],
 
 module.exports = {
   content: [
@@ -19,25 +22,13 @@ module.exports = {
     container: {
       center: false,
       padding: "2rem",
-      screens: {
-        sm: "100%",
-        md: "100%",
-        lg: "1024px",
-        xl: "1280px",
-        "2xl": "1400px",
-      },
     },
     extend: {
       fontFamily: {
-        sans: ["var(--font-inter)", ...fontFamily.sans],
-        mono: ["var(--font-roboto-mono)", ...fontFamily.mono],
+        sans: ["var(--font-inter)"],
+        mono: ["var(--font-roboto-mono)"],
       },
     },
-    // extend: {
-    //   screens: {
-    //     '2xl': '960px',
-    //   },
-    // },
   },
   corePlugins: {
     container: false,
